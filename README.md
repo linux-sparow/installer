@@ -1,5 +1,5 @@
-# makeloc
-full installation package
+# installer
+creamy installation package
 
 
 # testing
