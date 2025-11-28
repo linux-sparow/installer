@@ -63,6 +63,7 @@ wget -O /usr/rbin/xbox36.AppImage https://github.com/xemu-project/xemu/releases/
 chmod +x /usr/rbin/xbox36.AppImage && 
 
 
+
 ##
 ## SERVICE
 systemctl enable sddm &&
@@ -75,12 +76,13 @@ systemctl enable --global pipewire-pulse &&
 systemctl enable systemd-timesyncd.service &&
 
 
-
+##
 ## BINPATH
 chmod +x /usr/xbin/* &&
 chmod +x /usr/rbin/* &&
 
 
+##
 ## SESSION
 rm /usr/share/wayland-sessions/weston.desktop &&
 
