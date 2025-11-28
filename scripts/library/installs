@@ -61,11 +61,11 @@ if [[ ! -z $(echo $graphidven | grep -i --color 'Intel Corporation') ]];then
 fi
 
 if [[ ! -z $(lspci | grep -i --color '3d\|NVIDIA') ]];then
-    echo "graphic nvidia"
+    pacstrap /mnt nvidia-utils
 fi
 
-if [[ ! -z $(lspci | grep -i --color '3d\|AMD\|AMD/ATI\|RADEON') ]];then
-    pacstrap /mnt lib32-vulkan-amd vulkan-amd 
+if [[ ! -z $(lspci | grep -i --color '3d\|RADEON') ]];then
+    pacstrap /mnt lib32-vulkan-radeon vulkan-radeon 
 fi
 
 

@@ -3,7 +3,7 @@
 appdir=/install/scripts
 
 if [[ $1 == "--install" ]];then
-    /bin/bash $appdir/library/install &&
+    /bin/bash $appdir/library/installs &&
     exit
 fi
 
